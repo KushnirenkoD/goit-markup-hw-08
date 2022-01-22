@@ -1,0 +1,33 @@
+/*========================= Credo ===================================*/
+.middle-section {
+  padding: 94px 0px;
+  background-color: #ffffff;
+}
+.credo {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  height: 251px;
+  padding: 0px;
+}
+.credo__item {
+  width: 270px;
+  height: auto;
+}
+.credo__item:not(:last-child) {
+  margin-right: 30px;
+}
+.credo__heading-third {
+  margin-bottom: 10px;
+}
+.credo__item > svg {
+  content: '';
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}

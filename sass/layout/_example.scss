@@ -1,0 +1,31 @@
+/*========================= Example ===================================*/
+.example-section {
+  padding: 0px 0px 94px 0px;
+  background-color: #ffffff;
+}
+.example-section__heading-second {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.example-section__heading-third {
+  color: #ffffff;
+  margin: 0;
+}
+
+.example-section__box {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-left: 0;
+  position: relative;
+}
+.example-section__description-box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 370px;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0px;
+}

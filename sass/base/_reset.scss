@@ -1,0 +1,29 @@
+body {
+  font-family: var(--primery-font);
+  font-style: normal;
+  font-weight: normal;
+  background: var(--background-color);
+  color: var(--main-txt-color);
+}
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+ul,
+ol {
+  list-style: none;
+}
