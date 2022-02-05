@@ -1,28 +1,89 @@
 /*========================= Team ===================================*/
+
 .team {
+  width: 480px;
+  margin: 0 auto;
   background-color: var(--background3-color);
-  padding: 94px 0px;
+  padding: 60px 0px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding: 94px 0px;
+  }
 }
 .team__heading-second {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 50px;
+  }
 }
 .team__employee-list {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 0;
+  padding: 0;
   margin: 0;
-  padding-left: 0;
+  & .team__employee:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    & .team__employee:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & .team__employee:nth-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .team__employee {
-  height: 428px;
+  max-width: 450px;
+  height: auto;
+  margin: 0 auto;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 15px;
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+    margin: 0;
+  }
 }
 .team__employee-img {
   display: block;
+  width: 450px;
+  height: 460px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 374px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 260px;
+  }
 }
 .team__heading-fourth,
 .team__employee-job {
@@ -42,8 +103,8 @@
 .team__employee-socials {
   display: flex;
   justify-content: center;
-  margin: 30px 32px 16px 32px;
-  padding: 0;
+  margin-top: 16px;
+  padding: 0 0 24px 0;
 }
 .team__employee-socials li:not(:last-child) {
   margin-right: 10px;

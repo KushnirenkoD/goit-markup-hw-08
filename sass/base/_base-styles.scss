@@ -1,16 +1,32 @@
 /*Вынесены общие стили*/
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto 0;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
+
 .heading-first {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
+
 .categories__title {
   font-weight: bold;
   font-size: 18px;
@@ -18,11 +34,22 @@
   letter-spacing: 0.06em;
   color: var(--main-txt-color);
 }
-.heading-second {
+.heading-second,
+.clients__heading-second,
+.team__heading-second,
+.middle-section__heading-second {
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
+}
+.clients__heading-second,
+.team__heading-second,
+.middle-section__heading-second {
+  @media screen and (min-widht: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 .heading-third {
   font-weight: bold;
@@ -37,19 +64,7 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.categories__text {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
 .text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-.credo__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

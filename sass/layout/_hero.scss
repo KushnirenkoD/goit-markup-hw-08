@@ -1,17 +1,50 @@
 /*========================= Hero ===================================*/
 .hero {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/img-bg.jpg);
+    // url(../../images/img-bg_mob@1x.jpg)
+    url(../sass/img-bg_mob@1x.jpg);
   background-color: var(--background2-color);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding: 200px 0px;
-  max-width: 1600px;
-  height: 600px;
+  padding: 118px 0px;
+  width: 480px;
+  height: 400px;
   margin: 0 auto 0;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      // url(../../images/img-bg_tab@1x.jpg)
+      url(../sass/img-bg_tab@1x.jpg);
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      // url(../../images/img-bg_desk@1x.jpg)
+      url(../sass/img-bg_desk@1x.jpg);
+    padding: 200px 0px;
+    width: 1600px;
+    height: 600px;
+  }
 }
 .hero__heading-first {
   padding-bottom: 30px;
 }
+
+// .hero {
+//   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//     url(../images/img-bg.jpg);
+//   background-color: var(--background2-color);
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   text-align: center;
+//   padding: 200px 0px;
+//   max-width: 1600px;
+//   height: 600px;
+//   margin: 0 auto 0;
+// }
+// .hero__heading-first {
+//   padding-bottom: 30px;
+// }

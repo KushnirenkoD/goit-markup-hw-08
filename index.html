@@ -15,12 +15,52 @@
 </head>
 <body>
 
+
 <!-- =============================== Header =============================== -->
     <header class="header">
         <div class="container">
             <div class="header-style">
                 <nav class="header-navbar">
                     <a href="/" class="header-navbar__logo">Web<span>Studio</span></a>
+                    <button class="header-navbar__buttons" type="button" aria-expanded="false" aria-controls="header-navbar-menu__container" data-menu-button>
+                        <svg width=40px height=40px aria-label="Переключатель мобильного меню">
+                            <use class="header-navbar__icon-menu" href="./images/icons.svg#icon-menu"></use>
+                            <use class="header-navbar__icon-cross" href="./images/icons.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <!-- <div class="header-navbar-menu__container" id="header-navbar-menu__container" data-menu>
+                        <ul class="header-navbar-menu__boxes">
+                            <li class="header-navbar-menu__item header-navbar-menu__item--uactive">
+                                <a href="#" class="header-navbar-menu__link header-navbar-menu__link--underline header-navbar-menu__link--active">Студия</a>
+                            </li>
+                            <li class="header-navbar-menu__item">
+                                <a href="portfolio.html" class="header-navbar-menu__link header-navbar-menu__link--underline">Портфолио</a>
+                            </li>
+                            <li class="header-navbar-menu__item">
+                                <a href="#" class="header-navbar-menu__link header-navbar-menu__link--underline">Контакты</a>
+                            </li>
+                            <li class="header-navbar__item">
+                                <a href="mailto:info@devstudio.com" class="header-navbar__link">info@devstudio.com</a>
+                            </li>
+                            <li class="header-navbar__item">
+                                <a href="tel:+380961111111" class="header-navbar__link">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                        <ul class="header-navbar-menu__socials-list">
+                            <li class="header-navbar-menu__socials-list">
+                                <a href="#" class="header-navbar-menu__socials-link">Instagram</a>
+                            </li>
+                            <li class="header-navbar-menu__socials-list">
+                                <a href="#" class="header-navbar-menu__socials-link">Twitter</a>
+                            </li>
+                            <li class="header-navbar-menu__socials-list">
+                                <a href="#" class="header-navbar-menu__socials-link">Facebook</a>
+                            </li>
+                            <li class="header-navbar-menu__socials-list">
+                                <a href="#" class="header-navbar-menu__socials-link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div> -->
                     <ul class="header-navbar__boxes">
                             <li class="header-navbar__item header-navbar__item--uactive"><a href="#" class="header-navbar__link header-navbar__link--underline header-navbar__link--active">Студия</a></li>
                             <li class="header-navbar__item"><a href="portfolio.html" class="header-navbar__link header-navbar__link--underline">Портфолио</a></li>
@@ -28,15 +68,15 @@
                     </ul>
                 </nav>
                 <ul class="header-adress">
-                    <li class="header-navbar__item">
-                        <a href="mailto:info@devstudio.com" class="header-navbar__link">info@devstudio.com
+                    <li class="header-navbar__item header-navbar__item-tablet">
+                        <a href="mailto:info@devstudio.com" class="header-navbar__link header-navbar__link--grey-color">info@devstudio.com
                             <svg width=16px height=12px>
                                 <use href="./images/icons.svg#icon-mail"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="header-navbar__item">
-                        <a href="tel:+380961111111" class="header-navbar__link">+38 096 111 11 11
+                        <a href="tel:+380961111111" class="header-navbar__link header-navbar__link--grey-color">+38 096 111 11 11
                             <svg width=10px height=16px>
                                 <use href="./images/icons.svg#icon-smartphone"></use>
                             </svg>
@@ -71,32 +111,32 @@
                                         <use href="./images/icons.svg#icon-antenna"></use>
                                     </svg>
                                     <h3 class="credo__heading-third">Внимание к деталям</h3>
-                                    <p class="credo__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                                    <p class="credo__text text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                                 </li>
                                 <li class="credo__item">
                                     <svg>
                                         <use href="./images/icons.svg#icon-clock"></use>
                                     </svg>
                                     <h3 class="credo__heading-third">Пунктуальность</h3>
-                                    <p class="credo__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                                    <p class="credo__text text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                                 </li>
                                 <li class="credo__item">
                                     <svg>
                                         <use href="./images/icons.svg#icon-diagrama"></use>
                                     </svg>
                                     <h3 class="credo__heading-third">Планирование</h3>
-                                    <p class="credo__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                                    <p class="credo__text text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                                 </li>
                                 <li class="credo__item">
                                     <svg>
                                         <use href="./images/icons.svg#icon-astronaut"></use>
                                     </svg>
                                     <h3 class="credo__heading-third">Современные технологии</h3>
-                                    <p class="credo__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                                    <p class="credo__text text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                                 </li> 
                             </ul>
-                        </div>
-            </section>
+                </div>
+            </section>        
 
 <!-- =============================== Example =============================== -->
             <section class="example-section">
@@ -133,7 +173,9 @@
                 <h2 class="team__heading-second heading-second">Наша команда</h2>
                 <ul class="team__employee-list">
                     <li class="team__employee">
-                        <img class="team__employee-img" src="./images/img_main4.jpg" alt="Product Designer" width="270" height="260" />
+                        <!-- <img class="team__employee-img" srcset="./images/img_main4-desk-270@1x.jpg 270w, ./images/img_main4-desk-354@1x.jpg 354w, ./images/img_main4-desk-450@1x.jpg 450w, ./images/img_main4-desk-540@2x.jpg 540w, ./images/img_main4-desk-708@2x.jpg 708w,
+                        ./images/img_main4-desk-900@2x.jpg 900w," sizes="100vw" src="./images/img_main4-mob-450@1x.jpg" alt="Product Designer" width="450" height="460"/> -->
+                        <img class="team__employee-img" src="./images/img_main4-mob-450@1x.jpg" alt="Product Designer"/>
                         <h4 class="team__heading-fourth heading-fourth">Игорь Демьяненко</h4>
                         <p class="team__employee-job">Product Designer</p>
                         <ul class="team__employee-socials">
@@ -168,7 +210,7 @@
                         </ul>
                     </li>
                     <li class="team__employee">
-                        <img class="team__employee-img" src="./images/img_main5.jpg" alt="Frontend Developer" width="270" height="260" />
+                        <img class="team__employee-img" src="./images/img_main5-mob-450@1x.jpg" alt="Frontend Developer"/>
                         <h4 class="team__heading-fourth heading-fourth">Ольга Репина</h4>
                         <p class="team__employee-job">Frontend Developer</p>
                         <ul class="team__employee-socials">
@@ -203,7 +245,7 @@
                         </ul>
                     </li>
                     <li class="team__employee">
-                        <img class="team__employee-img" src="./images/img_main6.jpg" alt="Marketing" width="270" height="260" />
+                        <img class="team__employee-img" src="./images/img_main6-mob-450@1x.jpg" alt="Marketing"/>
                         <h4 class="team__heading-fourth heading-fourth">Николай Тарасов</h4>
                         <p class="team__employee-job">Marketing</p>
                         <ul class="team__employee-socials">
@@ -238,7 +280,7 @@
                         </ul>
                     </li>
                     <li class="team__employee">
-                        <img class="team__employee-img" src="./images/img_main7.jpg" alt="UI Designer" width="270" height="260" />
+                        <img class="team__employee-img" src="./images/img_main7-mob-450@1x.jpg" alt="UI Designer"/>
                         <h4 class="team__heading-fourth heading-fourth">Михаил Ермаков</h4>
                         <p class="team__employee-job">UI Designer</p>
                         <ul class="team__employee-socials">
@@ -419,6 +461,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
 

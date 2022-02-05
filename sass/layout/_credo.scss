@@ -1,33 +1,101 @@
 /*========================= Credo ===================================*/
 .middle-section {
-  padding: 94px 0px;
+  width: 480px;
+  margin: 0 auto;
+  padding: 60px 0px;
   background-color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 60px 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1600px;
+    padding: 94px 0px;
+  }
 }
 .credo {
-  display: flex;
-  margin: 0;
-  justify-content: center;
-  height: 251px;
-  padding: 0px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  // width: 450px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // height: 251px;
+    // width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    // height: 251px;
+    width: 1200px;
+  }
 }
-.credo__item {
-  width: 270px;
-  height: auto;
+
+@media screen and (min-width: 768px) {
+  .credo__item {
+    // width: 354px;
+    width: calc(100% / 2 - 2 * 15px);
+    // height: auto;
+  }
+  .credo__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .credo__item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
 }
-.credo__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .credo__item {
+    width: 270px;
+    height: auto;
+  }
+  .credo__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .credo__item:nth-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+}
+
+.credo__item:not(:first-child) {
+  margin-top: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 .credo__heading-third {
   margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 .credo__item > svg {
   content: '';
   display: block;
-  width: 270px;
+  margin: 0 auto;
+  width: calc(100% - 2 * 15px);
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    // width: 354px;
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    // width: 270px;
+    width: 100%;
+  }
 }
