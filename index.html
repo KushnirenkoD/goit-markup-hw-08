@@ -28,43 +28,10 @@
                             <use class="header-navbar__icon-cross" href="./images/icons.svg#icon-close-black"></use>
                         </svg>
                     </button>
-                    <!-- <div class="header-navbar-menu__container" id="header-navbar-menu__container" data-menu>
-                        <ul class="header-navbar-menu__boxes">
-                            <li class="header-navbar-menu__item header-navbar-menu__item--uactive">
-                                <a href="#" class="header-navbar-menu__link header-navbar-menu__link--underline header-navbar-menu__link--active">Студия</a>
-                            </li>
-                            <li class="header-navbar-menu__item">
-                                <a href="portfolio.html" class="header-navbar-menu__link header-navbar-menu__link--underline">Портфолио</a>
-                            </li>
-                            <li class="header-navbar-menu__item">
-                                <a href="#" class="header-navbar-menu__link header-navbar-menu__link--underline">Контакты</a>
-                            </li>
-                            <li class="header-navbar__item">
-                                <a href="mailto:info@devstudio.com" class="header-navbar__link">info@devstudio.com</a>
-                            </li>
-                            <li class="header-navbar__item">
-                                <a href="tel:+380961111111" class="header-navbar__link">+38 096 111 11 11</a>
-                            </li>
-                        </ul>
-                        <ul class="header-navbar-menu__socials-list">
-                            <li class="header-navbar-menu__socials-list">
-                                <a href="#" class="header-navbar-menu__socials-link">Instagram</a>
-                            </li>
-                            <li class="header-navbar-menu__socials-list">
-                                <a href="#" class="header-navbar-menu__socials-link">Twitter</a>
-                            </li>
-                            <li class="header-navbar-menu__socials-list">
-                                <a href="#" class="header-navbar-menu__socials-link">Facebook</a>
-                            </li>
-                            <li class="header-navbar-menu__socials-list">
-                                <a href="#" class="header-navbar-menu__socials-link">LinkedIn</a>
-                            </li>
-                        </ul>
-                    </div> -->
                     <ul class="header-navbar__boxes">
-                            <li class="header-navbar__item header-navbar__item--uactive"><a href="#" class="header-navbar__link header-navbar__link--underline header-navbar__link--active">Студия</a></li>
-                            <li class="header-navbar__item"><a href="portfolio.html" class="header-navbar__link header-navbar__link--underline">Портфолио</a></li>
-                            <li class="header-navbar__item"><a href="#" class="header-navbar__link header-navbar__link--underline">Контакты</a></li>
+                        <li class="header-navbar__item header-navbar__item--uactive"><a href="#" class="header-navbar__link header-navbar__link--underline header-navbar__link--active">Студия</a></li>
+                        <li class="header-navbar__item"><a href="portfolio.html" class="header-navbar__link header-navbar__link--underline">Портфолио</a></li>
+                        <li class="header-navbar__item"><a href="#" class="header-navbar__link header-navbar__link--underline">Контакты</a></li>
                     </ul>
                 </nav>
                 <ul class="header-adress">
@@ -173,9 +140,12 @@
                 <h2 class="team__heading-second heading-second">Наша команда</h2>
                 <ul class="team__employee-list">
                     <li class="team__employee">
-                        <!-- <img class="team__employee-img" srcset="./images/img_main4-desk-270@1x.jpg 270w, ./images/img_main4-desk-354@1x.jpg 354w, ./images/img_main4-desk-450@1x.jpg 450w, ./images/img_main4-desk-540@2x.jpg 540w, ./images/img_main4-desk-708@2x.jpg 708w,
-                        ./images/img_main4-desk-900@2x.jpg 900w," sizes="100vw" src="./images/img_main4-mob-450@1x.jpg" alt="Product Designer" width="450" height="460"/> -->
-                        <img class="team__employee-img" src="./images/img_main4-mob-450@1x.jpg" alt="Product Designer"/>
+                        <picture>
+                            <source srcset="./images/img_main4-desk-270@1x.jpg 1x, ./images/img_main4-desk-540@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/img_main4-tab-354@1x.jpg 1x, ./images/img_main4-tab-708@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/img_main4-mob-450@1x.jpg 1x, ./images/img_main4-mob-900@2x.jpg 2x" media="(min-width: 480px)" />
+                            <img class="team__employee-img"  src="./images/img_main4-mob-450@1x.jpg" alt="Product Designer"/>
+                        </picture>
                         <h4 class="team__heading-fourth heading-fourth">Игорь Демьяненко</h4>
                         <p class="team__employee-job">Product Designer</p>
                         <ul class="team__employee-socials">
@@ -210,7 +180,12 @@
                         </ul>
                     </li>
                     <li class="team__employee">
-                        <img class="team__employee-img" src="./images/img_main5-mob-450@1x.jpg" alt="Frontend Developer"/>
+                        <picture>
+                            <source srcset="./images/img_main5-desk-270@1x.jpg 1x, ./images/img_main5-desk-540@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/img_main5-tab-354@1x.jpg 1x, ./images/img_main5-tab-708@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/img_main5-mob-450@1x.jpg 1x, ./images/img_main5-mob-900@2x.jpg 2x" media="(min-width: 480px)" />
+                            <img class="team__employee-img" src="./images/img_main5-mob-450@1x.jpg" alt="Frontend Developer" />
+                        </picture>
                         <h4 class="team__heading-fourth heading-fourth">Ольга Репина</h4>
                         <p class="team__employee-job">Frontend Developer</p>
                         <ul class="team__employee-socials">
@@ -245,7 +220,12 @@
                         </ul>
                     </li>
                     <li class="team__employee">
-                        <img class="team__employee-img" src="./images/img_main6-mob-450@1x.jpg" alt="Marketing"/>
+                        <picture>
+                            <source srcset="./images/img_main6-desk-270@1x.jpg 1x, ./images/img_main6-desk-540@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/img_main6-tab-354@1x.jpg 1x, ./images/img_main6-tab-708@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/img_main6-mob-450@1x.jpg 1x, ./images/img_main6-mob-900@2x.jpg 2x" media="(min-width: 480px)" />
+                             <img class="team__employee-img" src="./images/img_main6-mob-450@1x.jpg" alt="Marketing" />
+                        </picture>
                         <h4 class="team__heading-fourth heading-fourth">Николай Тарасов</h4>
                         <p class="team__employee-job">Marketing</p>
                         <ul class="team__employee-socials">
@@ -280,7 +260,12 @@
                         </ul>
                     </li>
                     <li class="team__employee">
-                        <img class="team__employee-img" src="./images/img_main7-mob-450@1x.jpg" alt="UI Designer"/>
+                        <picture>
+                            <source srcset="./images/img_main7-desk-270@1x.jpg 1x, ./images/img_main7-desk-540@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/img_main7-tab-354@1x.jpg 1x, ./images/img_main7-tab-708@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/img_main7-mob-450@1x.jpg 1x, ./images/img_main7-mob-900@2x.jpg 2x" media="(min-width: 480px)" />
+                            <img class="team__employee-img" src="./images/img_main7-mob-450@1x.jpg" alt="UI Designer" />
+                        </picture>
                         <h4 class="team__heading-fourth heading-fourth">Михаил Ермаков</h4>
                         <p class="team__employee-job">UI Designer</p>
                         <ul class="team__employee-socials">
@@ -459,6 +444,41 @@
                 <button type="submit" class="modal__form-cb-button">Отправить</button>
             </form>          
         </div>
+    </div>
+
+<!-- =============================== Navbar menu ================================= -->
+    <div class="header-navbar-menu__container" id="header-navbar-menu__container" data-menu>
+        <ul class="header-navbar-menu__boxes">
+            <li class="header-navbar-menu__item">
+                <a href="#" class="header-navbar-menu__link">Студия</a>
+            </li>
+            <li class="header-navbar-menu__item">
+                <a href="portfolio.html" class="header-navbar-menu__link">Портфолио</a>
+            </li>
+            <li class="header-navbar-menu__item">
+                <a href="#" class="header-navbar-menu__link">Контакты</a>
+            </li>
+            <li class="header-navbar-menu__item">
+                <a href="mailto:info@devstudio.com" class="header-navbar-menu__link header-navbar-menu__link--grey-color">info@devstudio.com</a>
+            </li>
+            <li class="header-navbar-menu__item">
+                <a href="tel:+380961111111" class="header-navbar-menu__link header-navbar-menu__link--grey-color">+38 096 111 11 11</a>
+            </li>
+        </ul>
+        <ul class="header-navbar-menu__socials">
+            <li class="header-navbar-menu__socials-list">
+                <a href="#" class="header-navbar-menu__socials-link">Instagram</a>
+            </li>
+            <li class="header-navbar-menu__socials-list">
+                <a href="#" class="header-navbar-menu__socials-link">Twitter</a>
+            </li>
+            <li class="header-navbar-menu__socials-list">
+                <a href="#" class="header-navbar-menu__socials-link">Facebook</a>
+            </li>
+            <li class="header-navbar-menu__socials-list">
+                <a href="#" class="header-navbar-menu__socials-link">LinkedIn</a>
+            </li>
+        </ul>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
