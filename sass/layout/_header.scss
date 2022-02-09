@@ -44,13 +44,14 @@
 }
 
 /*Вынесены стили объектов*/
+
 .header {
   width: 480px;
   height: 60px;
   margin: 0 auto 0;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
-  overflow: hidden;
+  // overflow: hidden;
   position: relative;
 
   @media screen and (min-width: 768px) {
@@ -65,6 +66,9 @@
     width: 1600px;
   }
 }
+.container-header {
+  display: flex;
+}
 .header-navbar {
   display: flex;
   justify-content: space-between;
@@ -74,7 +78,7 @@
 }
 
 .header-navbar__logo {
-  margin-right: calc(450px - 134px - 40px);
+  // margin-right: calc(450px - 134px - 40px);
   margin-left: 0px;
 
   @media screen and (min-width: 768px) {
@@ -96,6 +100,7 @@
   }
   .header-style {
     margin: 0 15px;
+    justify-content: space-between;
   }
   .header-adress {
     margin: 0 0 0 auto;
