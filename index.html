@@ -8,86 +8,89 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
     <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/main.min.css">
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
 </head>
 <body>
-
-
-<!-- =============================== Header =============================== -->
+    
+    
+    <!-- =============================== Header =============================== -->
     <header class="header">
-        <!-- =============================== Navbar menu ================================= -->
-                            <div class="header-navbar-menu__container" id="header-navbar-menu__container" data-menu>
-                                <ul class="header-navbar-menu__boxes">
-                                    <li class="header-navbar-menu__item">
-                                        <a href="index.html" class="header-navbar-menu__link">Студия</a>
-                                    </li>
-                                    <li class="header-navbar-menu__item">
-                                        <a href="portfolio.html" class="header-navbar-menu__link">Портфолио</a>
-                                    </li>
-                                    <li class="header-navbar-menu__item">
-                                        <a href="#" class="header-navbar-menu__link">Контакты</a>
-                                    </li>
-                                    <li class="header-navbar-menu__item">
-                                        <a href="mailto:info@devstudio.com"
-                                            class="header-navbar-menu__link header-navbar-menu__link--grey-color">info@devstudio.com</a>
-                                    </li>
-                                    <li class="header-navbar-menu__item">
-                                        <a href="tel:+380961111111" class="header-navbar-menu__link header-navbar-menu__link--grey-color">+38 096
-                                            111 11 11</a>
-                                    </li>
-                                </ul>
-                                <ul class="header-navbar-menu__socials">
-                                    <li class="header-navbar-menu__socials-list">
-                                        <a href="#" class="header-navbar-menu__socials-link">Instagram</a>
-                                    </li>
-                                    <li class="header-navbar-menu__socials-list">
-                                        <a href="#" class="header-navbar-menu__socials-link">Twitter</a>
-                                    </li>
-                                    <li class="header-navbar-menu__socials-list">
-                                        <a href="#" class="header-navbar-menu__socials-link">Facebook</a>
-                                    </li>
-                                    <li class="header-navbar-menu__socials-list">
-                                        <a href="#" class="header-navbar-menu__socials-link">LinkedIn</a>
-                                    </li>
-                                </ul>
-                            </div>
-        <!-- =============================== Navbar menu ================================= -->
-        <div class="container">
-            <div class="header-style">
+        <div class="container container-header">
+            <!-- =============================== Navbar menu ================================= -->
+            <button class="header-navbar__buttons" type="button" aria-expanded="false" aria-controls="header-navbar-menu__container" data-menu-button>
+                <svg width=40px height=40px aria-label="Переключатель мобильного меню">
+                    <use class="header-navbar__icon-menu" href="./images/icons.svg#icon-menu"></use>
+                    <use class="header-navbar__icon-cross" href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <div class="header-navbar-menu__container" id="header-navbar-menu__container" data-menu>
+                    <!-- <div class="header-navbar-menu__linkbox"> -->
+                        <ul class="header-navbar-menu__boxes">
+                            <li class="header-navbar-menu__item">
+                                <a href="index.html" class="header-navbar-menu__link">Студия</a>
+                            </li>
+                            <li class="header-navbar-menu__item">
+                                <a href="portfolio.html" class="header-navbar-menu__link">Портфолио</a>
+                            </li>
+                            <li class="header-navbar-menu__item">
+                                <a href="#" class="header-navbar-menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    <!-- </div> -->
+                    <!-- <div class="header-navbar-menu__contactbox"> -->
+                        <ul class="header-navbar-menu__links">
+                            <li class="header-navbar-menu__item">
+                                <a href="tel:+380961111111" class="header-navbar-menu__link header-navbar-menu__link--blue-color">+38 096 111 11 11</a>
+                            </li>
+                            <li class="header-navbar-menu__item">
+                                <a href="mailto:info@devstudio.com" class="header-navbar-menu__link header-navbar-menu__link--grey-color">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                    <!-- </div> -->
+                    <!-- <div class="header-navbar-menu__socialbox"> -->
+                        <ul class="header-navbar-menu__socials">
+                            <li class="header-navbar-menu__socials-list">
+                                <a href="#" class="header-navbar-menu__socials-link">Instagram</a>
+                            </li>
+                            <li class="header-navbar-menu__socials-list">
+                                <a href="#" class="header-navbar-menu__socials-link">Twitter</a>
+                            </li>
+                            <li class="header-navbar-menu__socials-list">
+                                <a href="#" class="header-navbar-menu__socials-link">Facebook</a>
+                            </li>
+                            <li class="header-navbar-menu__socials-list">
+                                <a href="#" class="header-navbar-menu__socials-link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    <!-- </div> -->
+            </div>
+    <!-- =============================== Header tab/deck =============================== -->
                 <nav class="header-navbar">
-                    <a href="index.html" class="header-navbar__logo">Web<span>Studio</span></a>
-                    <button class="header-navbar__buttons" type="button" aria-expanded="false" aria-controls="header-navbar-menu__container" data-menu-button>
-                        <svg width=40px height=40px aria-label="Переключатель мобильного меню">
-                            <use class="header-navbar__icon-menu" href="./images/icons.svg#icon-menu"></use>
-                            <use class="header-navbar__icon-cross" href="./images/icons.svg#icon-close-black"></use>
-                        </svg>
-                    </button>
+                    <a href="in" class="header-navbar__logo">Web<span class="header-navbar__logo--accent">Studio</span></a>
                     <ul class="header-navbar__boxes">
-                        <li class="header-navbar__item header-navbar__item--uactive"><a href="#" class="header-navbar__link header-navbar__link--underline header-navbar__link--active">Студия</a></li>
-                        <li class="header-navbar__item"><a href="portfolio.html" class="header-navbar__link header-navbar__link--underline">Портфолио</a></li>
-                        <li class="header-navbar__item"><a href="#" class="header-navbar__link header-navbar__link--underline">Контакты</a></li>
+                        <li class="header-navbar__item"><a href="index.html" class="header-navbar__link header-navbar__link--activ">Студия</a></li>
+                        <li class="header-navbar__item"><a href="portfolio.html" class="header-navbar__link">Портфолио</a></li>
+                        <li class="header-navbar__item"><a href="#" class="header-navbar__link">Контакты</a></li>
                     </ul>
                 </nav>
                 <ul class="header-adress">
-                    <li class="header-navbar__item header-navbar__item-tablet">
-                        <a href="mailto:info@devstudio.com" class="header-navbar__link header-navbar__link--grey-color">info@devstudio.com
-                            <svg width=16px height=12px>
+                    <li class="header-navbar__adress">
+                        <a href="mailto:info@devstudio.com" class="header-navbar__adress-link">
+                            <svg class="header-navbar__ico-mail header-navbar__icon" width=16px height=12px>
                                 <use href="./images/icons.svg#icon-mail"></use>
-                            </svg>
+                            </svg>info@devstudio.com
                         </a>
                     </li>
-                    <li class="header-navbar__item">
-                        <a href="tel:+380961111111" class="header-navbar__link header-navbar__link--grey-color">+38 096 111 11 11
-                            <svg width=10px height=16px>
+                    <li class="header-navbar__adress">
+                        <a href="tel:+380961111111" class="header-navbar__adress-link">
+                            <svg class="header-navbar__ico-phone header-navbar__icon" width=10px height=16px>
                                 <use href="./images/icons.svg#icon-smartphone"></use>
-                            </svg>
+                            </svg>+38 096 111 11 11
                         </a>
                     </li>
                 </ul>
-            </div>
         </div>
     </header>
 
@@ -114,28 +117,28 @@
                                     <svg>
                                         <use href="./images/icons.svg#icon-antenna"></use>
                                     </svg>
-                                    <h3 class="credo__heading-third .heading-third">Внимание к деталям</h3>
+                                    <h3 class="credo__heading-third">Внимание к деталям</h3>
                                     <p class="credo__text text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                                 </li>
                                 <li class="credo__item">
                                     <svg>
                                         <use href="./images/icons.svg#icon-clock"></use>
                                     </svg>
-                                    <h3 class="credo__heading-third .heading-third">Пунктуальность</h3>
+                                    <h3 class="credo__heading-third">Пунктуальность</h3>
                                     <p class="credo__text text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                                 </li>
                                 <li class="credo__item">
                                     <svg>
                                         <use href="./images/icons.svg#icon-diagrama"></use>
                                     </svg>
-                                    <h3 class="credo__heading-third .heading-third">Планирование</h3>
+                                    <h3 class="credo__heading-third">Планирование</h3>
                                     <p class="credo__text text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                                 </li>
                                 <li class="credo__item">
                                     <svg>
                                         <use href="./images/icons.svg#icon-astronaut"></use>
                                     </svg>
-                                    <h3 class="credo__heading-third .heading-third">Современные технологии</h3>
+                                    <h3 class="credo__heading-third">Современные технологии</h3>
                                     <p class="credo__text text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                                 </li> 
                             </ul>
@@ -452,7 +455,7 @@
                     <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
             </button>
-            <p class="modal__heading"><b>Оставьте свои данные, мы вам перезвоним</b></p>
+            <b class="modal__heading">Оставьте свои данные, мы вам перезвоним</b>
             <form class="modal__form">
                 <label class="modal__form-item">Имя
                     <input type="text" name="user-name" class="modal__form-item-input" required>
@@ -483,40 +486,6 @@
         </div>
     </div>
 
-<!-- =============================== Navbar menu ================================= -->
-    <!-- <div class="header-navbar-menu__container" id="header-navbar-menu__container" data-menu>
-        <ul class="header-navbar-menu__boxes">
-            <li class="header-navbar-menu__item">
-                <a href="index.html" class="header-navbar-menu__link">Студия</a>
-            </li>
-            <li class="header-navbar-menu__item">
-                <a href="portfolio.html" class="header-navbar-menu__link">Портфолио</a>
-            </li>
-            <li class="header-navbar-menu__item">
-                <a href="#" class="header-navbar-menu__link">Контакты</a>
-            </li>
-            <li class="header-navbar-menu__item">
-                <a href="mailto:info@devstudio.com" class="header-navbar-menu__link header-navbar-menu__link--grey-color">info@devstudio.com</a>
-            </li>
-            <li class="header-navbar-menu__item">
-                <a href="tel:+380961111111" class="header-navbar-menu__link header-navbar-menu__link--grey-color">+38 096 111 11 11</a>
-            </li>
-        </ul>
-        <ul class="header-navbar-menu__socials">
-            <li class="header-navbar-menu__socials-list">
-                <a href="#" class="header-navbar-menu__socials-link">Instagram</a>
-            </li>
-            <li class="header-navbar-menu__socials-list">
-                <a href="#" class="header-navbar-menu__socials-link">Twitter</a>
-            </li>
-            <li class="header-navbar-menu__socials-list">
-                <a href="#" class="header-navbar-menu__socials-link">Facebook</a>
-            </li>
-            <li class="header-navbar-menu__socials-list">
-                <a href="#" class="header-navbar-menu__socials-link">LinkedIn</a>
-            </li>
-        </ul>
-    </div> -->
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
 </body>
