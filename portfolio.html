@@ -12,46 +12,84 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/main.min.css">
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
 </head>
 
 <body>
     <!-- =============================== Header =============================== -->
     <header class="header">
-        <div class="container">
-            <div class="header-style">
-                <nav class="header-navbar">
-                    <a href="index.html" class="header-navbar__logo">Web<span>Studio</span></a>
-                    <button class="header-navbar__buttons" type="button" aria-expanded="false" aria-controls="header-navbar-menu__container"
-                        data-menu-button>
-                        <svg width=40px height=40px aria-label="Переключатель мобильного меню">
-                            <use class="header-navbar__icon-menu" href="./images/icons.svg#icon-menu"></use>
-                            <use class="header-navbar__icon-cross" href="./images/icons.svg#icon-close-black"></use>
-                        </svg>
-                    </button>
-                    <ul class="header-navbar__boxes">
-                        <li class="header-navbar__item"><a href="index.html" class="header-navbar__link header-navbar__link--underline">Студия</a></li>
-                        <li class="header-navbar__item header-navbar__item--uactive"><a href="#" class="header-navbar__link header-navbar__link--underline header-navbar__link--active">Портфолио</a></li>
-                        <li class="header-navbar__item"><a href="#" class="header-navbar__link header-navbar__link--underline">Контакты</a></li>
-                    </ul>
-                </nav>
-                <ul class="header-adress">
-                    <li class="header-navbar__item header-navbar__item-tablet">
-                        <a href="mailto:info@devstudio.com" class="header-navbar__link header-navbar__link--grey-color">info@devstudio.com
-                            <svg width=16px height=12px>
-                                <use href="./images/icons.svg#icon-mail"></use>
-                            </svg>
-                        </a>
+        <div class="container container-header">
+            <!-- =============================== Navbar menu ================================= -->
+            <button class="header-navbar__buttons" type="button" aria-expanded="false"
+                aria-controls="header-navbar-menu__container" data-menu-button>
+                <svg width=40px height=40px aria-label="Переключатель мобильного меню">
+                    <use class="header-navbar__icon-menu" href="./images/icons.svg#icon-menu"></use>
+                    <use class="header-navbar__icon-cross" href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <div class="header-navbar-menu__container" id="header-navbar-menu__container" data-menu>
+                <ul class="header-navbar-menu__boxes">
+                    <li class="header-navbar-menu__item">
+                        <a href="index.html" class="header-navbar-menu__link">Студия</a>
                     </li>
-                    <li class="header-navbar__item">
-                        <a href="tel:+380961111111" class="header-navbar__link header-navbar__link--grey-color">+38 096 111 11 11
-                            <svg width=10px height=16px>
-                                <use href="./images/icons.svg#icon-smartphone"></use>
-                            </svg>
-                        </a>
+                    <li class="header-navbar-menu__item">
+                        <a href="portfolio.html" class="header-navbar-menu__link">Портфолио</a>
+                    </li>
+                    <li class="header-navbar-menu__item">
+                        <a href="#" class="header-navbar-menu__link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="header-navbar-menu__links">
+                    <li class="header-navbar-menu__item">
+                        <a href="tel:+380961111111"
+                            class="header-navbar-menu__link header-navbar-menu__link--blue-color">+38 096 111 11 11</a>
+                    </li>
+                    <li class="header-navbar-menu__item">
+                        <a href="mailto:info@devstudio.com"
+                            class="header-navbar-menu__link header-navbar-menu__link--grey-color">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="header-navbar-menu__socials">
+                    <li class="header-navbar-menu__socials-list">
+                        <a href="#" class="header-navbar-menu__socials-link">Instagram</a>
+                    </li>
+                    <li class="header-navbar-menu__socials-list">
+                        <a href="#" class="header-navbar-menu__socials-link">Twitter</a>
+                    </li>
+                    <li class="header-navbar-menu__socials-list">
+                        <a href="#" class="header-navbar-menu__socials-link">Facebook</a>
+                    </li>
+                    <li class="header-navbar-menu__socials-list">
+                        <a href="#" class="header-navbar-menu__socials-link">LinkedIn</a>
                     </li>
                 </ul>
             </div>
+            <!-- =============================== Header tab/deck =============================== -->
+            <nav class="header-navbar">
+                <a href="index.html" class="header-navbar__logo">Web<span class="header-navbar__logo--accent">Studio</span></a>
+                <ul class="header-navbar__boxes">
+                    <li class="header-navbar__item"><a href="index.html" class="header-navbar__link">Студия</a>
+                    </li>
+                    <li class="header-navbar__item"><a href="portfolio.html" class="header-navbar__link header-navbar__link--activ">Портфолио</a></li>
+                    <li class="header-navbar__item"><a href="#" class="header-navbar__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="header-adress">
+                <li class="header-navbar__adress">
+                    <a href="mailto:info@devstudio.com" class="header-navbar__adress-link">
+                        <svg class="header-navbar__ico-mail header-navbar__icon" width=16px height=12px>
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>info@devstudio.com
+                    </a>
+                </li>
+                <li class="header-navbar__adress">
+                    <a href="tel:+380961111111" class="header-navbar__adress-link">
+                        <svg class="header-navbar__ico-phone header-navbar__icon" width=10px height=16px>
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+
         </div>
     </header>
     <main>
