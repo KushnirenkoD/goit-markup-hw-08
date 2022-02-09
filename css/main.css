@@ -55,6 +55,7 @@ ol {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    position: relative;
   }
 }
 
@@ -2056,21 +2057,14 @@ body {
 .header-navbar-menu__container {
   display: none;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vw;
-  z-index: 2;
+  z-index: 0;
   background-color: green;
   padding: 48px 0 48px 40px;
   text-align: left;
-}
-
-@media screen and (min-width: 480px) {
-  .header-navbar-menu__container {
-    left: -webkit-calc((100vw - 480px) / 2);
-    left: calc((100vw - 480px) / 2);
-  }
 }
 
 .header-navbar-menu__container.is-open {
@@ -2084,6 +2078,7 @@ body {
 }
 
 .header-navbar-menu__boxes {
+  position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
