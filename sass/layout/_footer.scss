@@ -8,7 +8,6 @@
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    // padding: 0;
   }
   @media screen and (min-width: 1200px) {
     width: 1600px;
@@ -34,11 +33,9 @@
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
-    display: flex;
+    flex-wrap: nowrap;
   }
   .footer__style {
-    display: flex;
-    flex-direction: column;
     padding: 60px 70px 60px 0px;
     width: 400px;
   }
@@ -69,19 +66,18 @@
 .footer__contacts {
   padding-left: 0;
   margin: 20px 0 0 0;
+  &:not(:last-child) {
+    margin: 0px 0px 8px 0px;
 
+    @media screen and (min-width: 1200px) {
+      margin: 0px 0px 9px 0px;
+    }
+  }
   @media screen and (min-width: 1200px) {
     margin: 0;
   }
 }
 
-.footer__contact:not(:last-child) {
-  margin: 0px 0px 8px 0px;
-
-  @media screen and (min-width: 1200px) {
-    margin: 0px 0px 9px 0px;
-  }
-}
 .footer__heading-second {
   font-family: var(--primery-font);
   font-style: normal;
@@ -121,14 +117,15 @@
   transition-property: background-color;
   transition-duration: var(--time);
   transition-timing-function: var(--time-f);
+  &:hover,
+  &:focus {
+    background-color: var(--primery-color);
+  }
 }
 .footer__socials-link svg {
   fill: #ffffff;
 }
-.footer__socials-link:hover,
-.footer__socials-link:focus {
-  background-color: var(--primery-color);
-}
+
 .footer__email-form {
   display: flex;
   flex-wrap: wrap;
@@ -141,6 +138,7 @@
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
+    flex-direction: row;
   }
 }
 .footer__lable {
@@ -156,18 +154,19 @@
   padding: 15px 0px 15px 16px;
   background: inherit;
   color: rgba(255, 255, 255, 0.6);
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 
   @media screen and (min-width: 1200px) {
     width: 358px;
     margin-right: 12px;
   }
 }
-.footer__email::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
+
 .footer__button {
   display: flex;
   align-items: center;

@@ -26,11 +26,13 @@
   transition-duration: var(--time);
   transition-timing-function: var(--time-f);
   z-index: 1;
+  // position: fixed;
 
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
+
 .header-navbar__buttons:hover,
 .header-navbar__buttons:focus {
   cursor: pointer;
