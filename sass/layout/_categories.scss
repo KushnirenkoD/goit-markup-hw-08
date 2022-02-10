@@ -12,7 +12,8 @@
     width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1600px;
+    // width: 1600px;
+    width: 100%;
   }
 }
 
@@ -35,6 +36,7 @@
   transition-property: box-shadow;
   transition-duration: var(--time);
   transition-timing-function: var(--time-f);
+  margin: 0 auto;
   width: 450px;
   &:not(:last-child) {
     margin-bottom: 30px;
@@ -44,7 +46,7 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   @media screen and (max-width: 479px) {
-    width: 100%;
+    width: calc(100% - 30px);
     height: 100%;
   }
   @media screen and (min-width: 768px) {
