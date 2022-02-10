@@ -1,6 +1,9 @@
 /*========================= Modal form ===================================*/
 .modal {
   position: absolute;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
   width: 450px;
   height: 609px;
   left: 50%;
@@ -12,6 +15,7 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--time) var(--time-f);
   padding: 40px;
+  // z-index: 4;
 
   @media screen and (max-width: 479px) {
     width: 95vw;
@@ -189,7 +193,7 @@
   overflow: hidden;
 }
 .modal__form-cb-button {
-  margin: 0 85px;
+  margin: 0 0 0 calc((100% - 200px) / 2);
 }
 .modal__form-item-input:hover,
 .modal__form-item-input:focus {

@@ -1772,6 +1772,7 @@ header {
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
+  z-index: 4;
   -webkit-transform: opacity var(--time) var(--time-f), visibility var(--time) var(--time-f);
       -ms-transform: opacity var(--time) var(--time-f), visibility var(--time) var(--time-f);
           transform: opacity var(--time) var(--time-f), visibility var(--time) var(--time-f);
@@ -1792,6 +1793,16 @@ header {
 /*========================= Modal form ===================================*/
 .modal {
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 450px;
   height: 609px;
   left: 50%;
@@ -2085,7 +2096,8 @@ header {
 }
 
 .modal__form-cb-button {
-  margin: 0 85px;
+  margin: 0 0 0 -webkit-calc((100% - 200px) / 2);
+  margin: 0 0 0 calc((100% - 200px) / 2);
 }
 
 .modal__form-item-input:hover,
@@ -2126,7 +2138,7 @@ header {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0;
+  margin: 0 auto;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;

@@ -8,6 +8,8 @@
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
+  z-index: 4;
+
   transform: opacity var(--time) var(--time-f), visibility var(--time) var(--time-f);
 }
 .backdrop.is-hidden {
