@@ -1821,6 +1821,7 @@ header {
   transition: transform var(--time) var(--time-f);
   transition: transform var(--time) var(--time-f), -webkit-transform var(--time) var(--time-f);
   padding: 40px;
+  overflow-y: scroll;
 }
 
 @media screen and (max-width: 479px) {
@@ -2151,6 +2152,7 @@ header {
           justify-content: space-between;
   position: fixed;
   z-index: 1;
+  overflow-y: scroll;
 }
 
 @media screen and (min-width: 768px) {
@@ -2256,7 +2258,17 @@ header {
 }
 
 .header-navbar-menu__socials-list:not(:last-child) {
-  margin-right: 20px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 479px) {
+  .header-navbar-menu__socials-list:not(:last-child) {
+    border-right: 0;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
 }
 
 .header-navbar-menu__socials-link {

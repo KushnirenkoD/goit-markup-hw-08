@@ -15,6 +15,7 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--time) var(--time-f);
   padding: 40px;
+  overflow-y: scroll;
   // z-index: 4;
 
   @media screen and (max-width: 479px) {
