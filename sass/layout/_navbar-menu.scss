@@ -5,12 +5,12 @@
   left: 0;
   width: 100vw;
   // width: 480px;
-  height: 796px;
+  height: 100%;
   background-color: #ffffff;
   padding: 48px 40px;
   text-align: left;
   @media screen and (max-width: 479px) {
-    height: 100vw;
+    height: 100vh;
   }
 }
 .header-navbar-menu__container.is-open {
@@ -54,38 +54,42 @@
   &:focus {
     color: var(--primery-color);
   }
-  &:nth-child(-n + 2) {
-    font-size: 34px;
-    @media screen and (max-width: 479px) {
-      font-weight: 300;
-      font-size: 20px;
-      line-height: 1.18;
-      letter-spacing: 0.02em;
-      margin-bottom: 0px;
-    }
-  }
+  // &:nth-child(-n + 2) {
+  //   font-size: 34px;
+  // @media screen and (max-width: 479px) {
+  //   font-weight: 500;
+  //   font-size: 40px;
+  //   line-height: 1.18;
+  //   letter-spacing: 0.02em;
+  //   margin-bottom: 32px;
+  // }
+  // }
   &--blue-color {
     color: var(--primery-color);
+    font-size: 34px;
   }
   &--grey-color {
     color: #757575;
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
 
-.header-navbar-menu__item {
+.header-navbar-menu__item:not(:last-child) {
   margin-bottom: 32px;
-  @media screen and (max-width: 479px) {
-    margin-bottom: 12px;
-  }
+
+  // @media screen and (max-width: 479px) {
+  //   margin-bottom: 12px;
+  // }
 }
 
 .header-navbar-menu__socials {
   display: flex;
   margin: 64px 0 0 0;
-  @media screen and (max-width: 479px) {
-    margin: 0;
-    flex-direction: column;
-  }
+  // @media screen and (max-width: 479px) {
+  //   margin: 0;
+  //   flex-direction: column;
+  // }
 }
 .header-navbar-menu__socials-list {
   &:not(:last-child) {
@@ -93,11 +97,11 @@
     padding-right: 10px;
     margin-right: 10px;
 
-    @media screen and (max-width: 479px) {
-      border-right: 0;
-      padding-right: 0px;
-      margin-right: 0px;
-    }
+    // @media screen and (max-width: 479px) {
+    //   border-right: 0;
+    //   padding-right: 0px;
+    //   margin-right: 0px;
+    // }
   }
 }
 
@@ -117,4 +121,12 @@
   // &:focus {
   //   color: var(--primery-color);
   // }
+  @media screen and (max-width: 400px) {
+    font-size: 16px;
+  }
+}
+
+.header-navbar-menu__contactbox {
+  display: flex;
+  flex-direction: column;
 }
